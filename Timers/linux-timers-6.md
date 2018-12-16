@@ -341,7 +341,7 @@ for_each_possible_cpu(cpu) {
 }
 ```
 
-because only first bootstrap processor will call the `tsc_init`. After this we check hat `Time Stamp Counter` is not disabled:
+because only first bootstrap processor will call the `tsc_init`. After this we check that `Time Stamp Counter` is not disabled:
 
 ```
 if (tsc_disabled > 0)
